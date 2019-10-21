@@ -1,3 +1,3 @@
 FROM NGINX
 
-add ./index.html ./usr/share/nginx/html
+ADD ./index.html ./usr/share/nginx/html
