@@ -1,0 +1,8 @@
+---
+ -hosts: dev
+  tasks: 
+   - name: pull the image from Docker rigistry
+     raw: docker pull meghanath/test:1
+
+   - name: spin up container
+     raw: docker run -dti --name c1 -p 99:80 meghanath/test:1 /bin/bash
