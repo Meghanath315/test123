@@ -1,6 +1,6 @@
 ---
- -hosts: dev
-  tasks: 
+ - hosts: dev
+   tasks: 
    - name: pull the image from Docker rigistry
      raw: docker pull meghanath/test:1
    - name: Remove the container if present
