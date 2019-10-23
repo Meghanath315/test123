@@ -15,7 +15,7 @@
  - hosts: qa
    tasks:
    - name: pull the image from Docker rigistry
-     raw: docker pull meghanath/test2:2
+     raw: docker pull meghanath/test1:2
      raw: docker pull meghanath/test2:3
    - name: Remove the container if present
      raw: docker rm -f c2 c3
