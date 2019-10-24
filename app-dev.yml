@@ -1,6 +1,7 @@
 ---
  - hosts: dev
-   tags: dev
+   tags:
+     - dev
    tasks: 
    - name: pull the image from Docker rigistry
      raw: docker pull meghanath/test1:2
@@ -16,7 +17,8 @@
 
 
  - hosts: qa
-   tags: qa
+   tags:
+     - qa
    tasks:
    - name: pull the image from Docker rigistry
      raw: docker pull meghanath/test1:2
